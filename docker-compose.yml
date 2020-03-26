@@ -10,8 +10,7 @@ services:
     depends_on:
       - mongo
     volumes:
-      - ./.devcontainer/.vscode:/api/.vscode
-      - ~/.ssh/:/opt/odoo/.ssh/
+      - ./.vscode:/api/.vscode
     ports: ["3000:3000"]
 
   mongo:

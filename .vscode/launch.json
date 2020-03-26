@@ -17,6 +17,7 @@
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "runtimeArgs": ["-r", "esm"],
+      "envFile": "${workspaceFolder}/.env",
       "program": "${workspaceFolder}/index.js"
     }
   ]
