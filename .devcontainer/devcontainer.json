@@ -1,0 +1,27 @@
+{
+  "name": "Node.js and MongoDb",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "api",
+  "workspaceFolder": "/api",
+  "shutdownAction": "stopCompose",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "editor.fontSize": 18,
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Andromeda",
+    "workbench.iconTheme": "material-icon-theme"
+  },
+  "extensions": [
+    "aaron-bond.better-comments",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "CoenraadS.bracket-pair-colorizer",
+    "eamodio.gitlens",
+    "eg2.vscode-npm-script",
+    "EliverLara.andromeda",
+    "esbenp.prettier-vscode",
+    "PKief.material-icon-theme",
+    "redhat.vscode-yaml",
+    "xabikos.JavaScriptSnippets"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "nodejs_dev_container",
+  "version": "1.0.0",
+  "description": "Node.js development environment inside a Docker Container",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --inspect -r esm index.js",
+    "start:dev": "nodemon -r esm index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarluanEspiritusanto/nodejs_dev_container.git"
+  },
+  "keywords": [
+    "docker",
+    "nodejs",
+    "vscode",
+    "microsoft",
+    "containers"
+  ],
+  "author": "Marluan Espiritusanto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarluanEspiritusanto/nodejs_dev_container/issues"
+  },
+  "homepage": "https://github.com/MarluanEspiritusanto/nodejs_dev_container#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.6"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2"
+  }
+}
