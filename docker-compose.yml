@@ -2,6 +2,7 @@ version: "3.7"
 
 services:
   api:
+    name: nodejs-api
     build: .
     environment:
       - MONGO_URI=mongodb://mongo:27017/fruits
@@ -12,8 +13,10 @@ services:
     volumes:
       - .vscode:/api/.vscode
     ports: ["3000:3000"]
+    tty: true
 
   mongo:
+    name: mongo-db
     image: mongo
     volumes:
       - "./db:/data/db"
