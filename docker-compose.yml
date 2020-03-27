@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   api:
-    name: nodejs-api
+    container_name: nodejs-fruits-api
     build: .
     environment:
       - MONGO_URI=mongodb://mongo:27017/fruits
@@ -16,7 +16,7 @@ services:
     tty: true
 
   mongo:
-    name: mongo-db
+    container_name: mongo-db
     image: mongo
     volumes:
       - "./db:/data/db"
